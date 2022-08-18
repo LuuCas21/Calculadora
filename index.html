@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="theme" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CALCULADORA - ONLINE</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="darkLightMode">
+            <div id="div_1"></div>
+            <div id="div_1"></div>
+            <div id="buttons">
+            <button type="button" id="changeMode" class="fa fa-sun-o" onclick="change_theme('light.css')"></button>
+            <button type="button" id="changeMode" class="fa fa-moon-o" onclick="change_theme('style.css')"></button>
+            </div>
+        </div>
+        <div id="calculator_div">
+            <h2>CALCULADORA</h2>
+            <div id="form">
+                <input type="text" id="number_1" required>
+                <select id="selector">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="text" id="number_2" required>
+                <button type="button" id="calculate" onclick="calculator()">CALCULAR</button>
+                <div id="output">
+                    <h3>RESULTADO</h3>
+                    <h4 id="result"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
